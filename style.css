@@ -1,0 +1,479 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(133, 31, 31, 0.897);
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper1 {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d e e"
+    "f f f f";
+}
+
+.wrapper2 {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    ". d d ."
+    "f f f f";
+}
+
+.wrapper3 {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "e e d d"
+    "e e c c"
+    "f f f f";
+}
+
+.wrapper4 {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "h h h h"
+    "c c e e"
+    "g g g g"
+    "d d d d"
+    "i i i i"
+    "f f f f";
+}
+
+.wrapper5 {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "h h h h"
+    "j j j j"
+    "f f f f"
+}
+
+header {
+    grid-area: a;
+}
+
+nav {
+    grid-area: b;
+}
+
+section {
+    grid-area: c;
+}
+
+main {
+    grid-area: d;
+}
+
+aside {
+    grid-area: e;
+}
+
+footer {
+    grid-area: f;
+}
+
+table {
+    grid-area: g;
+}
+
+div {
+    grid-area: h;
+}
+
+details {
+    grid-area: i;
+}
+
+form {
+    grid-area: j;
+}
+
+.main-header {
+    background-color: rgba(197, 155, 64, 0.794);
+    text-align: center;
+    padding: 5px;
+}
+
+#main-h1 {
+    letter-spacing: .15em;
+}
+
+#slogan {
+    letter-spacing: .2em;
+}
+
+#navbar {
+    background-color: rgb(52, 82, 51);
+    border: 1px solid rgba(255, 255, 255, 0.87);
+    border-right: 0px;
+    border-left: 0px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 16px;
+    padding: 45px;
+    letter-spacing: .1em;
+}
+
+#navbar a:hover {
+    color: rgb(44, 17, 17)
+}
+
+#navbar a:active {
+    color: rgba(133, 31, 31, 0.897);
+}
+
+.showcase {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.ovenpic {
+    width: 1200px;
+    height: 500px;
+}
+
+.main-content {
+    box-sizing: border-box;
+    font-size: 20px;
+    letter-spacing: .1em;
+    flex: 50%;
+    padding: 10px 100px 10px 40px;
+    text-align: right;
+    background-color: rgb(52, 82, 51);
+    margin-top: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+.main-content p {
+    letter-spacing: .1em;
+    font-size: 18px;
+}
+
+.sidebar {
+    font-size: 20px;
+    letter-spacing: .1em;
+    flex: 50%;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-bottom: 0px;
+    background-color: rgb(52, 82, 51);
+    margin-top: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+#main-footer {
+    text-align: center;
+    margin-top: auto;
+    letter-spacing: .1em;
+}
+
+.aboutp {
+    padding-bottom: 70px;
+}
+
+.about-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0;
+    letter-spacing: .15em;
+}
+
+.aboutstatement {
+    padding: 75px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.6em;
+    word-spacing: .3em;
+    text-align: justify;
+    background-color: rgba(197, 155, 64, 0.794);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.top {
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    line-height: 1.6em;
+    font-size: 18px;
+    
+}
+
+.section1 {
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid white;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    margin-top: 0px;
+    background-color: rgb(52, 82, 51);
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-right: 1px solid white;
+    margin-bottom: 0px;
+    margin-top: 0;
+    background-color: rgba(197, 155, 64, 0.794);
+}
+
+#contact-content {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hours {
+    padding-top: 10px;
+}
+
+.open {
+    width: 400px;
+}
+
+.contact-footer {
+    border-top: 1px solid white;
+}
+
+.topmenu {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-image {
+    background-color: rgb(52, 82, 51);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.pizzeria-image {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-title {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: .2em;
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(197, 155, 64, 0.794);
+    padding: 0px;
+    letter-spacing: .03em;
+    line-height: 2em;
+    word-spacing: .1em;
+    font-size: 18px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.menu-table {
+    border-collapse: collapse;
+    margin: 50px 20px 0px 20px;
+    width: 1200px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    text-align: center;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-table thead tr {
+    background-color: rgb(52, 82, 51);
+    color: #ddd;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-table th td {
+    padding: 12px 15px;
+}
+
+.menu-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.menu-table tbody tr:nth-of-type(even) {
+    background-color: rgba(197, 155, 64, 0.794);
+}
+
+.menu-table tbody tr:last-child {
+    border-bottom: 0px;
+}
+
+#toppings {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    line-height: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: capitalize;
+
+}
+
+#toppings h3 {
+    padding-left: 20px;
+}
+
+.box1 {
+    grid-column: 1/2;
+    background-color: rgb(52, 82, 51);
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
+
+.box2 {
+    grid-column: 2/3;
+    background-color: rgb(52, 82, 51);
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
+
+.box3 {
+    grid-column: 3/4;
+    background-color: rgb(52, 82, 51);
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
+
+.box4 {
+    grid-column: 4/5;
+    background-color: rgb(52, 82, 51);
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
+
+details {
+    padding: 20px;
+}
+
+.order-header {
+    padding-left: 30px; 
+    padding-top: 20px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid white;
+    margin-bottom: 0px;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(197, 155, 64, 0.794);
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+form li {
+    list-style: none;
+    padding: 10px;
+    letter-spacing: .05em;
+}
+
+label {
+    width: 200px;
+    display: inline-block;
+}
+
+form h3 {
+    text-decoration: underline;
+    letter-spacing: .05em;
+}
+
+form h4 {
+    letter-spacing: .05em;
+}
+
+button {
+    padding: 10px;
+    margin: 20px 20px 20px 45px;
+    background-color: rgb(52, 82, 51);
+    color:rgba(255, 255, 255, 0.87);
+    border: 1px solid rgb(52, 82, 51);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    border-radius: 20%;
+}
+
+button:hover {
+    background-color: rgba(133, 31, 31, 0.897);
+}
+
+button:active {
+    background-color: rgba(116, 104, 104, 0.294);
+}

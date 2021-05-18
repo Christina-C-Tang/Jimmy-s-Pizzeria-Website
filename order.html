@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Jimmy's Pizzeria</title>
+    <link href="style.css" rel="stylesheet"  type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper5">
+        <header>
+            <div class="main-header">
+                <h1 id="main-h1">Jimmy's Pizzeria</h1>
+                <h4 id="slogan">"Feels Like Home" since 1984</h4>
+            </div>
+        </header>
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">All About Jimmy's</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <h2 class="order-header">Order Online</h2>
+        </div>
+        <form action="" method="POST">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Enter Name Here" required>
+                </li>
+                <li>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                </li>
+                <li>
+                    <input type="radio" id="delivery" name="transportation" value="delivery">
+                    <label for="delivery" required>Delivery (FREE)</label><br>
+                    <input type="radio" id="pickup" name="transportation" value="pickup">
+                    <label for="pickup">Pick-Up</label>
+                </li>
+                <li>
+                    <label for="pizza-size">Size of Pizza</label>
+                    <select name="pizza-size" id="pizza-size">
+                        <option value="small">Small $8.00</option>
+                        <option value="med">Medium $10.00</option>
+                        <option value="lrg">Large $11.50</option>
+                        <option value="xlrg">Extra-Large $12.50</option>
+                    </select>
+                </li>
+                <h3>Classic Toppings</h3>
+                <p>(includes ONE complimentary classic topping, each additional classic topping is $1)</p>
+                <li class="classic">
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+                    <input type="checkbox" id="ham" name="ham" value="ham">
+                    <label for="ham">Ham</label><br>
+                    <input type="checkbox" id="onions" name="onions" value="onions">
+                    <label for="onions">Onions</label><br>
+                    <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                    <label for="pineapple">Pineapple</label><br>
+                    <input type="checkbox" id="gp" name="green-peppers" value="green-p">
+                    <label for="gp">Green Peppers</label><br>
+                    <input type="checkbox" id="mush" name="mushrooms" value="mush">
+                    <label for="mush">Mushrooms</label><br>
+                    <input type="checkbox" id="jala" name="jalapenos" value="jala">
+                    <label for="jala">Jalapenos</label><br>
+                    <input type="checkbox" id="spin" name="spinach" value="spinach">
+                    <label for="spinach">Spinach</label><br>
+                    <input type="checkbox" id="go" name="green-olives" value="g-olives">
+                    <label for="go">Green Olives</label><br>
+                    <input type="checkbox" id="bo" name="black-olives" value="b-olives">
+                    <label for="bo">Black Olives</label><br>
+                </li>
+                <h3>Speciality Toppings</h3>
+                <p>(Each topping is an additional $2.00)</p>
+                <li>
+                    <input type="checkbox" id="chicken" name="chicken" value="chicken">
+                    <label for="chicken">Chicken</label><br>
+                    <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                    <label for="bacon">Bacon</label><br>
+                    <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                    <label for="sausage">Sausage</label><br>
+                    <input type="checkbox" id="stk" name="steak" value="stk">
+                    <label for="stk">Steak</label><br>
+                    <input type="checkbox" id="gb" name="ground-beef" value="g-beef">
+                    <label for="gb">Ground Beef</label><br>
+                    <input type="checkbox" id="st" name="sundried-tomatoes" value="sun-tom">
+                    <label for="st">Sundried Tomatoes</label><br>
+                    <input type="checkbox" id="xc" name="extra-cheese" value="x-cheese">
+                    <label for="xc">Extra Cheese</label><br>
+                </li>
+                <h3>Side Items</h3>
+                <li>
+                    <label for="gl">Garlic Loaf $4.00</label>
+                    <input type="number" min="0" id="gl" name="garlic-loaf"><br>
+                    <label for="cs">Caesar Salad $5.00</label>
+                    <input type="number" min="0" id="cs" name="caesar-salad">
+                </li>
+                <h4>Wings 1 lb $9.00</h4>
+                <li class="wings">
+                    <label for="hot">Hot</label>
+                    <input type="number" min="0" id="hot" name="hot-wings"><br>
+                    <label for="mild">Mild</label>
+                    <input type="number" min="0" id="mild" name="mild-wings"><br>
+                    <label for="hg">Honey-Garlic</label>
+                    <input type="number" min="0" id="hg" name="honey-garlic"><br>
+                </li>
+                <h3>Drinks</h3>
+                <li>
+                    <label for="water">Bottle of Water $1.00</label>
+                    <input type="number" min="0" id="water" name="water"><br>
+                    <label for="cola">Can of Cocacola $1.50</label>
+                    <input type="number" id="cola" min="0" name="cocacola"><br>
+                    <label for="sprite">Can of Sprite $1.50</label>
+                    <input type="number" min="0" id="sprite" name="sprite"><br>
+                    <label for="rb">Can of Rootbeer $1.50</label>
+                    <input type="number" min="0" id="rb" name="rootbeer"><br>
+                </li>
+            </ul>
+                <button type="submit" name="submit" value="submit">SUBMIT</button> 
+        </form>
+        <footer id="main-footer">
+            <p>Copyright &copy 2021, Jimmy's Pizzeria</p>
+        </footer>
+    </body>
+</html>
